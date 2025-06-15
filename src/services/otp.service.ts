@@ -5,9 +5,7 @@ import { sendNumericOtp } from "../infrastructure/twilio.otp.sender.ts";
 import { hashOtpWithSalt } from "../domain/otp/hashOtp.ts";
 import { verifyOtp } from "../domain/otp/verifyOtp.ts";
 import env from "../config/env.ts";
-import { redisConnect } from "../config/redis.ts";
 
-await redisConnect();
 
 const expiryTime = env.OTP_EXPIRY_TIME
 
