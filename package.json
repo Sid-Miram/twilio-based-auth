@@ -1,0 +1,26 @@
+{
+  "name": "twilio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sid-Miram/twilio-based-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Sid-Miram/twilio-based-auth/issues"
+  },
+  "homepage": "https://github.com/Sid-Miram/twilio-based-auth#readme",
+  "devDependencies": {
+    "@types/node": "^24.0.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3"
+  }
+}
