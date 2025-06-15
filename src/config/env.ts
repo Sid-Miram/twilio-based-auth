@@ -33,7 +33,8 @@ function getEnv(name : string) : string {
 const env : Record<string, string> = {
 	TWILIO_ACCOUNT_SID : getEnv("TWILIO_ACCOUNT_SID"),
 	TWILIO_AUTH_TOKEN : getEnv("TWILIO_AUTH_TOKEN"),
-	TWILIO_MESSAGING_SERVICE_SID: getEnv("TWILIO_MESSAGING_SERVICE_SID")
+	TWILIO_MESSAGING_SERVICE_SID: getEnv("TWILIO_MESSAGING_SERVICE_SID"),
+	REDIS_URL: getEnv("REDIS_URL"),
 }
 
 export default env;
