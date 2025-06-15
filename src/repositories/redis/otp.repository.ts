@@ -12,7 +12,7 @@ import { generateSalt, hashOtpWithSalt } from "../../domain/otp/hashOtp.ts";
 
 
 
-export async function setOtp( phone: string, otp : string, exp = 3000 ) : Promise<void>{
+export async function setOtp( phone: string, otp : string, exp = 300 ) : Promise<void>{
 	const salt = generateSalt(32);
 	const hash = hashOtpWithSalt(otp, salt);
 
@@ -20,7 +20,7 @@ export async function setOtp( phone: string, otp : string, exp = 3000 ) : Promis
 
 	const redisKey = `otp:${phone}`;
 	try{
-	await redisClient.set(redisKey, data, "EX", exp, "NX");
+	await redisClient.set(redisKey, data, {"EX" : exp});
 	} catch (err){
 		console.error("Failed to store hashed OTP", err);
 		throw new Error("Redis OTP store failed");
