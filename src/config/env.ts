@@ -35,6 +35,8 @@ const env : Record<string, string> = {
 	TWILIO_AUTH_TOKEN : getEnv("TWILIO_AUTH_TOKEN"),
 	TWILIO_MESSAGING_SERVICE_SID: getEnv("TWILIO_MESSAGING_SERVICE_SID"),
 	REDIS_URL: getEnv("REDIS_URL"),
+	MAX_OTP_ATTEMPTS: getEnv("MAX_OTP_ATTEMPTS"),
+	OTP_EXPIRY_TIME: getEnv("OTP_EXPIRY_TIME")
 }
 
 export default env;
