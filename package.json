@@ -13,7 +13,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Sid-Miram/twilio-based-auth/issues"
   },
@@ -22,5 +22,9 @@
     "@types/node": "^24.0.1",
     "tsx": "^4.20.3",
     "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "twilio": "^5.7.1"
   }
 }
