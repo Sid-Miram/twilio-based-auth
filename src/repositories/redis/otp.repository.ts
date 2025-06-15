@@ -11,6 +11,7 @@ import { generateSalt, hashOtpWithSalt } from "../../domain/otp/hashOtp.ts";
 */ 
 
 
+
 export async function setOtp( phone: string, otp : string, exp = 3000 ) : Promise<void>{
 	const salt = generateSalt(32);
 	const hash = hashOtpWithSalt(otp, salt);
